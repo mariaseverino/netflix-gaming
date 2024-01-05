@@ -1,0 +1,51 @@
+.carrossel {
+  overflow: hidden;
+  height: 220px;
+  display: flex;
+  align-items: center;
+
+  transition: all ease 0.5s;
+  padding: 0 20px;
+  gap: 20px;
+}
+.container {
+  display: flex;
+
+  width: 350px;
+}
+
+img {
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+  transition: all ease 0.2s;
+}
+
+.carrossel .container:hover {
+  transform: scale(1.1);
+}
+
+li {
+  list-style: none;
+  background-color: brown;
+}
+.controller {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: absolute;
+  width: 100vw;
+  top: -35px;
+}
+
+.material-symbols-outlined {
+  font-size: 40px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.slider {
+  position: absolute;
+  bottom: 5px;
+}

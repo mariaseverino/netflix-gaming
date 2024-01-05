@@ -1,0 +1,21 @@
+<div class="slider">
+  <div class="controller">
+    <span class="material-symbols-outlined" (click)="goToLeft()">
+      chevron_left
+    </span>
+
+    <span class="material-symbols-outlined" (click)="goToRight()">
+      chevron_right
+    </span>
+  </div>
+  <ul class="carrossel" [style.margin-left.px]="translateX">
+    <li
+      *ngFor="let game of games"
+      class="container"
+      (click)="onSelectGame(game)"
+    >
+      <!-- {{ game.progress }} -->
+      <img src="assets/{{ game.smallImg }}" />
+    </li>
+  </ul>
+</div>

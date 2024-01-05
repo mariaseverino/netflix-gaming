@@ -1,0 +1,11 @@
+<div class="view">
+  <div
+    [ngStyle]="{ 'background-image': 'url(assets/' + gameD.bigImg + ')' }"
+    class="background"
+  >
+    <app-header></app-header>
+    <app-game-info [game]="gameD"></app-game-info>
+
+    <app-carrossel [games]="dataGame"></app-carrossel>
+  </div>
+</div>
